@@ -23,7 +23,10 @@ where {lexeme=yytext(); return Where;}
 table {lexeme=yytext(); return Table;}
 database {lexeme=yytext(); return Database;} 
 not {lexeme=yytext(); return Not;} 
-exist {lexeme=yytext(); return Exist;} 
+exists{lexeme=yytext(); return Exists;} 
+schema{lexeme=yytext(); return Schema;} 
+add{lexeme=yytext(); return Add;} 
+constraint{lexeme=yytext(); return Constraint;} 
 {espacio} {/*Ignore*/}
 "//".* {/*Ignore*/}
 "\n" {lexeme=yytext(); return Linea;}
